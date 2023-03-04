@@ -1,8 +1,7 @@
 ---
 import BaseHead from '../components/BaseHead.astro'
-import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
+import { Image } from '@astrojs/image/components'
 ---
 
 <!DOCTYPE html>
@@ -12,12 +11,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 	</head>
 	<body>
 		<main>
-			<h1 class='text-5xl font-bold'>🧑‍🚀 Hello everybody!</h1>
-			<p class='my-3 text-lg'>
-				Welcome to my place on the internet. A cool place to kick back and
-				chill.
-			</p>
-<p><a rel="me" href="https://mastodon.social/@grabeh">Mastodon</a></p>
+			<div class='p-3 md:p-0 mt-8 flex justify-center'>
+				<div class='md:w-1/4 w-full'>
+					<img src='/cat2.png' />
+
+					<div class='mt-3 text-center text-3xl font-bold'>Hi, I'm Michael</div>
+				</div>
+			</div>
 		</main>
 	</body>
 </html>
